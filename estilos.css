@@ -1,0 +1,87 @@
+body {
+	width: 100%;
+	height: 90vh;
+    font-family: 'Luckiest Guy', cursive;
+    background: linear-gradient(47deg, #4fe323, #23e3dc, #2395e3, #2338e3);
+    background-size: 800% 800%;
+
+-webkit-animation: AnimationName 26s ease infinite;
+-moz-animation: AnimationName 26s ease infinite;
+animation: AnimationName 26s ease infinite;
+
+}
+
+html, body {
+    height: 80%;
+    max-height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    position:relative;
+    /* border: 1px solid red; */
+    width: 80%;
+    text-align: center;
+}
+
+
+
+.container > p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+.menu li {
+	display: inline-block;
+	line-height: 35px; /*Superior*/
+	list-style: none; /*Decoración */
+	margin: 0 5px;
+}
+
+.menu li a {
+	background-image: -webkit-linear-gradient(
+	 	top,
+		rgba(255,255,255,.5) 0%,
+		rgba(0,0,0,.1) 100%
+	);
+	/* border: 2px solid gray; */
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.65);
+	color: #f4f4f4; /*Internet Explorer*/
+	color: rgba(255,255,255, 0.8);
+	font: bold 18px "Myriad Pro", "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-shadow: 3px 3px 10px rgba(0,0,0,0.4); 
+}
+
+.menu li a:active {
+	background-image: -webkit-linear-gradient(
+	 	left,
+		rgba(255,255,255,.5) 0%,
+		rgba(255,255,255,.2) 10%,
+		rgba(0,0,0,.2) 85%,
+		rgba(0,0,0,.4) 100%
+	);
+}
